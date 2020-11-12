@@ -1,5 +1,5 @@
 
-## Firefox WhiteSur theme
+## Firefox NordSur theme
 
 <p align="center">A MacOS Big Sur theme for Firefox 70+</p>
 

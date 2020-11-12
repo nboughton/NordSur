@@ -15,7 +15,7 @@ else
   DEST_DIR="$HOME/.themes"
 fi
 
-THEME_NAME=WhiteSur
+THEME_NAME=NordSur
 COLOR_VARIANTS=('-light' '-dark')
 OPACITY_VARIANTS=('' '-solid')
 ALT_VARIANTS=('' '-alt')

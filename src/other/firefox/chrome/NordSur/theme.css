@@ -18,6 +18,6 @@
 
 /* Set theme version text in customization panel */
 #customization-footer::before {
-	content: "Firefox WhiteSur theme";
+	content: "Firefox NordSur theme";
 	padding: 9px;
 }

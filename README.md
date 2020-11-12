@@ -1,7 +1,7 @@
-<img src="https://github.com/vinceliuice/Sierra-gtk-theme/blob/imgs/logo.png" alt="Logo" align="right" /> WhiteSur Gtk Theme
+<img src="https://github.com/vinceliuice/Sierra-gtk-theme/blob/imgs/logo.png" alt="Logo" align="right" /> NordSur Gtk Theme
 ======
 
-WhiteSur is a MacOS Big Sur like theme for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Pantheon, XFCE, Mate, etc.
+NordSur is a MacOS Big Sur like theme for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Pantheon, XFCE, Mate, etc.
 
 ## Info
 
@@ -67,7 +67,7 @@ Usage:  `./Install`  **[OPTIONS...]**
 |  OPTIONS:           | |
 |:--------------------|:-------------|
 |-d, --dest           | Specify theme destination directory (Default: $HOME/.themes)|
-|-n, --name           | Specify theme name (Default: WhiteSur)|
+|-n, --name           | Specify theme name (Default: NordSur)|
 |-c, --color          | Specify theme color variant(s) **[light/dark]** (Default: All variants)|
 |-o, --opacity        | Specify theme opacity variant(s) **[standard/solid]** (Default: All variants)|
 |-a, --alt            | Specify titlebutton variant(s) **[standard/alt]** (Default: All variants)|
@@ -89,10 +89,10 @@ If you want to change the panel transparency, then you can run:
 ### Suggested themes
 |  Suggested themes   | links | preview |
 |:--------------------|:-------------|:-------------|
-| Kde theme           | [WhiteSur-kde](https://github.com/vinceliuice/WhiteSur-kde)| ![kde](pictures/whitesur-kde-theme.png) |
-| Icon theme          | [WhiteSur-icon](https://github.com/vinceliuice/WhiteSur-icon-theme)| ![icon](pictures/whitesur-icon-theme.png) |
-| Wallpaper           | [WhiteSur wallpaper](https://github.com/vinceliuice/WhiteSur-kde/tree/master/wallpaper)| ![wallpaper](pictures/whitesur-wallpaper.png) |
-| Firefox theme       | [WhiteSur firefox theme](src/other/firefox)| ![firefox](pictures/firefox-theme.png) |
+| Kde theme           | [NordSur-kde](https://github.com/vinceliuice/NordSur-kde)| ![kde](pictures/NordSur-kde-theme.png) |
+| Icon theme          | [NordSur-icon](https://github.com/vinceliuice/NordSur-icon-theme)| ![icon](pictures/NordSur-icon-theme.png) |
+| Wallpaper           | [NordSur wallpaper](https://github.com/vinceliuice/NordSur-kde/tree/master/wallpaper)| ![wallpaper](pictures/NordSur-wallpaper.png) |
+| Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](pictures/firefox-theme.png) |
 
 ## Theme Preview
 ![gtk](pictures/preview-gtk.png)
