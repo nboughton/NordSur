@@ -2,6 +2,9 @@
 ======
 
 NordSur is a MacOS Big Sur like theme for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Pantheon, XFCE, Mate, etc.
+Based on WhiteSur by [Vince Liuice](https://github.com/vinceliuice)
+
+NordSur is currently far from complete. I haven't finished applying the palette to all the themes of the original WhiteSur. It is currently only tested for GTK3/GNOME. Pull requests are welcome.
 
 ## Info
 
@@ -89,9 +92,6 @@ If you want to change the panel transparency, then you can run:
 ### Suggested themes
 |  Suggested themes   | links | preview |
 |:--------------------|:-------------|:-------------|
-| Kde theme           | [NordSur-kde](https://github.com/vinceliuice/NordSur-kde)| ![kde](pictures/NordSur-kde-theme.png) |
-| Icon theme          | [NordSur-icon](https://github.com/vinceliuice/NordSur-icon-theme)| ![icon](pictures/NordSur-icon-theme.png) |
-| Wallpaper           | [NordSur wallpaper](https://github.com/vinceliuice/NordSur-kde/tree/master/wallpaper)| ![wallpaper](pictures/NordSur-wallpaper.png) |
 | Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](pictures/firefox-theme.png) |
 
 ## Theme Preview
