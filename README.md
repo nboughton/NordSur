@@ -92,7 +92,7 @@ If you want to change the panel transparency, then you can run:
 ### Suggested themes
 |  Suggested themes   | links | preview |
 |:--------------------|:-------------|:-------------|
-| Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](pictures/firefox-theme.png) |
+| Firefox theme       | [NordSur firefox theme](src/other/firefox)| Not Complete |
 
 ## Theme Preview
 ![gtk](pictures/preview-gtk.png)
