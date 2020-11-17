@@ -2600,7 +2600,7 @@ scrollbar slider:hover {
 }
 
 scrollbar slider:hover:active {
-  background-color: #88C0D0;
+  background-color: #81a1c1;
 }
 
 scrollbar slider:disabled {
@@ -4953,7 +4953,7 @@ filechooser paned > separator:hover,
 }
 
 .nautilus-window placessidebar.sidebar scrollbar slider:hover:active {
-  background-color: #88C0D0;
+  background-color: #81a1c1;
 }
 
 .nautilus-window placessidebar.sidebar scrollbar slider:disabled {

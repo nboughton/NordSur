@@ -145,8 +145,8 @@ $button_active_border:              #5E81AC;
 
 $header_button_bg:                  if($variant == 'dark', lighten($header_bg, 15%), #D8DEE9);
 $header_button_hover_bg:            if($variant == 'dark', lighten($header_bg, 25%), #E5E9F0);
-$header_button_active_bg:           if($variant == 'dark', lighten($header_bg, 35%), #88C0D0);
-$header_button_checked_bg:          if($variant == 'dark', lighten($header_bg, 45%), #88C0D0);
+$header_button_active_bg:           if($variant == 'dark', lighten($header_bg, 35%), #81a1c1);
+$header_button_checked_bg:          if($variant == 'dark', lighten($header_bg, 45%), #81a1c1);
 
 // Button borders and highlights colors
 $button_highlight:                  if($variant == 'light', #D8DEE9, rgba(216, 222, 233, 0.1));
