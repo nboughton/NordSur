@@ -832,7 +832,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 /* Popovers/Menus */
 .candidate-popup-boxpointer, .popup-menu .popup-menu-content, .modal-dialog {
   background-color: rgba(229, 233, 240, 0.95);
-  border-radius: 14px;
+  border-radius: 0px;
   border: none;
 }
 
@@ -844,7 +844,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .popup-menu .popup-sub-menu {
   background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 -4px -4px;
   border: none;
   box-shadow: none;
   margin: 0 6px;
@@ -853,7 +853,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .popup-menu .popup-sub-menu .popup-menu-item {
   margin: 0;
-  border-radius: 10px;
+  border-radius: -4px;
 }
 
 .popup-menu .popup-sub-menu .popup-menu-item:hover {
@@ -867,7 +867,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 }
 
 .popup-menu .popup-sub-menu .popup-menu-item:not(:first-child):last-child {
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 -4px -4px;
 }
 
 .popup-menu .popup-menu-content {
@@ -881,7 +881,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
   padding: 6px;
   color: #3B4252;
   text-shadow: none;
-  border-radius: 10px;
+  border-radius: -4px;
   margin: 0 6px;
   transition-duration: 0ms;
 }
@@ -898,7 +898,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
 
 .popup-menu .popup-menu-item:checked {
   font-weight: normal;
-  border-radius: 10px 10px 0 0;
+  border-radius: -4px -4px 0 0;
   border: none;
   box-shadow: none;
   background-color: rgba(255, 255, 255, 0.75);
@@ -3581,35 +3581,35 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer.top #dash, #dashtodockContainer.top:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.top.extended #dash, #dashtodockContainer.top.extended:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.bottom #dash, #dashtodockContainer.bottom:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.bottom.extended #dash, #dashtodockContainer.bottom.extended:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.left #dash, #dashtodockContainer.left:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.left.extended #dash, #dashtodockContainer.left.extended:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.right #dash, #dashtodockContainer.right:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.right.extended #dash, #dashtodockContainer.right.extended:overview #dash {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 #dashtodockContainer.top #dash, #dashtodockContainer.bottom #dash {
