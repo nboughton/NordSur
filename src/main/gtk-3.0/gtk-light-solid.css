@@ -2358,7 +2358,7 @@ notebook > stack:not(:only-child) {
 }
 
 notebook:not(.frame), notebook:not(.frame) > stack {
-  border-radius: 0 0 14px 14px;
+  border-radius: 0 0 0px 0px;
 }
 
 notebook > header {
@@ -5906,7 +5906,7 @@ window.background.csd > headerbar.titlebar > leaflet > separator.sidebar, window
 }
 
 .tweak-group-startup, list.tweak-group list, hdyleaflet list.view, hdyleaflet list.frame, leaflet list.view, leaflet list.frame, hdyleaflet frame.view, leaflet frame.view, hdyleaflet frame:not(.view) list:not(.contacts-contact-list), leaflet frame:not(.view) list:not(.contacts-contact-list) {
-  border-radius: 14px;
+  border-radius: 0px;
   box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.02), inset 0 0 3px rgba(0, 0, 0, 0.01), inset 0 0 0 1px rgba(0, 0, 0, 0.04), inset 0 1px rgba(0, 0, 0, 0.05);
   background-color: rgba(0, 0, 0, 0.03);
   border: none;
@@ -5918,17 +5918,17 @@ window.background.csd > headerbar.titlebar > leaflet > separator.sidebar, window
 }
 
 list.tweak-group list row.activatable:first-child, hdyleaflet list.view row.activatable:first-child, hdyleaflet list.frame row.activatable:first-child, leaflet list.view row.activatable:first-child, leaflet list.frame row.activatable:first-child, hdyleaflet frame.view list row.activatable:first-child, leaflet frame.view list row.activatable:first-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row.activatable:first-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row.activatable:first-child {
-  border-top-left-radius: 14px;
-  border-top-right-radius: 14px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 list.tweak-group list row.activatable:last-child, hdyleaflet list.view row.activatable:last-child, hdyleaflet list.frame row.activatable:last-child, leaflet list.view row.activatable:last-child, leaflet list.frame row.activatable:last-child, hdyleaflet frame.view list row.activatable:last-child, leaflet frame.view list row.activatable:last-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row.activatable:last-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row.activatable:last-child {
-  border-bottom-left-radius: 14px;
-  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 list.tweak-group list row.activatable:only-child, hdyleaflet list.view row.activatable:only-child, hdyleaflet list.frame row.activatable:only-child, leaflet list.view row.activatable:only-child, leaflet list.frame row.activatable:only-child, hdyleaflet frame.view list row.activatable:only-child, leaflet frame.view list row.activatable:only-child, hdyleaflet frame:not(.view) list:not(.contacts-contact-list) row.activatable:only-child, leaflet frame:not(.view) list:not(.contacts-contact-list) row.activatable:only-child {
-  border-radius: 14px;
+  border-radius: 0px;
 }
 
 hdyleaflet list > row.activatable, leaflet list > row.activatable {
@@ -6029,7 +6029,7 @@ window.background.csd > leaflet > box.vertical > scrolledwindow.view,
 window.background.csd > hdyleaflet > box.vertical > scrolledwindow.view,
 window.background.csd > box.horizontal > box.vertical > scrolledwindow.view {
   background-color: #eceff4;
-  border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 1px;
 }
 
 window.background.csd > leaflet > box.vertical > scrolledwindow.view > viewport.frame > stack,
@@ -6096,13 +6096,13 @@ window.background.csd > overlay > grid.horizontal > overlay > stack > box.horizo
 window.background.csd > overlay > hdyleaflet > stack > frame > grid.vertical,
 window.background.csd > overlay > leaflet > stack > frame > grid.vertical {
   background-color: #eceff4;
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 0px;
 }
 
 window.background.csd > overlay > hdyleaflet > overlay > scrolledwindow > viewport.frame,
 window.background.csd > overlay > leaflet > overlay > scrolledwindow > viewport.frame {
   background-color: #d8dee9;
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 0px;
 }
 
 window.background.csd > overlay > hdyleaflet > overlay > scrolledwindow > viewport.frame > hdycolumn > stack > box.horizontal > box.vertical > box.horizontal > button.image-button,
@@ -6171,13 +6171,13 @@ viewswitcherbar > actionbar {
 
 .polari-room-list .sidebar {
   background-color: #ECEFF4;
-  border-bottom-left-radius: 14px;
+  border-bottom-left-radius: 0px;
 }
 
 stack.view.polari-entry-area {
   background-color: #E5E9F0;
   border-top: 1px solid rgba(46, 52, 64, 0.12);
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 0px;
 }
 
 stack.view.polari-entry-area button.popup.flat.toggle.polari-nick-button:hover, stack.view.polari-entry-area .raven .raven-header:not(.top) button.popup.toggle.polari-nick-button:hover, .raven .raven-header:not(.top) stack.view.polari-entry-area button.popup.toggle.polari-nick-button:hover {
@@ -7998,7 +7998,7 @@ window.background.csd > stack > stack > paned.horizontal > scrolledwindow > view
 }
 
 .dynamic-notebook > notebook > stack {
-  border-bottom-right-radius: 14px;
+  border-bottom-right-radius: 0px;
   background-color: #D8DEE9;
 }
 
