@@ -73,7 +73,7 @@ usage() {
   printf "  %-25s%s\n" "-s, --size VARIANTS" "Run a dialg to change the nautilus sidebar width size (Default: 200px)"
   printf "  %-25s%s\n" "-i, --icon VARIANTS" "Specify activities icon variant(s) for gnome-shell [standard|normal|gnome|ubuntu|arch|manjaro|fedora|debian|void] (Default: standard variant)"
   printf "  %-25s%s\n" "-g, --gdm" "Install GDM theme, this option need root user authority! please run this with sudo"
-  printf "  %-25s%s\n" "-r, --revert" "revert GDM theme, this option need root user authority! please run this with sudo"
+  printf "  %-25s%s\n" "-r, --remove" "remove theme, remove all installed themes"
   printf "  %-25s%s\n" "-h, --help" "Show this help"
 }
 
@@ -218,6 +218,16 @@ install_gdm() {
   fi
 }
 
+remove_theme() {
+  for color in "${colors[@]-${COLOR_VARIANTS[@]}}"; do
+    for opacity in "${opacities[@]-${OPACITY_VARIANTS[@]}}"; do
+      for alt in "${alts[@]-${ALT_VARIANTS[@]}}"; do
+        [[ -d "${DEST_DIR}/${THEME_NAME}${color}${opacity}${alt}" ]] && rm -rf "${DEST_DIR}/${THEME_NAME}${color}${opacity}${alt}"
+      done
+    done
+  done
+}
+
 revert_gdm() {
   if [[ -f "$GS_THEME_FILE.bak" ]]; then
     prompt -w "reverting '$GS_THEME_FILE'..."
@@ -258,6 +268,17 @@ install_dialog() {
       sudo yum install dialog
     elif has_command pacman; then
       sudo pacman -S --noconfirm dialog
+    fi
+  fi
+}
+
+install_depends() {
+  if [ ! "$(which glib-compile-resources 2> /dev/null)" ]; then
+    prompt -w "\n 'glib2.0' needs to be installed for this shell"
+    if has_command apt; then
+      sudo apt install libglib2.0-dev-bin
+    elif has_command dnf; then
+      sudo dnf install -y glib2-devel
     fi
   fi
 }
@@ -371,8 +392,8 @@ while [[ $# -gt 0 ]]; do
       trans='true'
       shift 1
       ;;
-    -r|--revert)
-      revert='true'
+    -r|--remove)
+      remove='true'
       shift 1
       ;;
     -a|--alt)
@@ -508,15 +529,18 @@ while [[ $# -gt 0 ]]; do
 done
 
 install_theme() {
-for opacity in "${opacities[@]-${OPACITY_VARIANTS[@]}}"; do
+  # install depends
+  install_depends
+
   for color in "${colors[@]-${COLOR_VARIANTS[@]}}"; do
-    for alt in "${alts[@]-${ALT_VARIANTS[@]}}"; do
-      for icon in "${icons[@]-${ICON_VARIANTS[0]}}"; do
-        install "${dest:-${DEST_DIR}}" "${name:-${THEME_NAME}}" "${color}" "${opacity}" "${alt}" "${icon}"
+    for opacity in "${opacities[@]-${OPACITY_VARIANTS[@]}}"; do
+      for alt in "${alts[@]-${ALT_VARIANTS[@]}}"; do
+        for icon in "${icons[@]-${ICON_VARIANTS[0]}}"; do
+          install "${dest:-${DEST_DIR}}" "${name:-${THEME_NAME}}" "${color}" "${opacity}" "${alt}" "${icon}"
+        done
       done
     done
   done
-done
 }
 
 if [[ "${size:-}" == 'true' ]]; then
@@ -531,15 +555,19 @@ if [[ "${trans:-}" == 'true' ]]; then
   install_dialog && run_shell_dialog && change_transparency && parse_sass
 fi
 
-if [[ "${gdm:-}" != 'true' && "${revert:-}" != 'true' ]]; then
+if [[ "${gdm:-}" != 'true' && "${remove:-}" != 'true' ]]; then
   install_theme
 fi
 
-if [[ "${gdm:-}" == 'true' && "${revert:-}" != 'true' && "$UID" -eq "$ROOT_UID" ]]; then
+if [[ "${gdm:-}" == 'true' && "${remove:-}" != 'true' && "$UID" -eq "$ROOT_UID" ]]; then
   install_theme && install_gdm "${dest:-${DEST_DIR}}" "${name:-${THEME_NAME}}" "${color}" "${opacity}"
 fi
 
-if [[ "${gdm:-}" != 'true' && "${revert:-}" == 'true' && "$UID" -eq "$ROOT_UID" ]]; then
+if [[ "${gdm:-}" != 'true' && "${remove:-}" == 'true' ]]; then
+  remove_theme
+fi
+
+if [[ "${gdm:-}" == 'true' && "${remove:-}" == 'true' && "$UID" -eq "$ROOT_UID" ]]; then
   revert_gdm
 fi
 

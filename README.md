@@ -79,7 +79,7 @@ Usage:  `./Install`  **[OPTIONS...]**
 |-s, --size           | Run a dialg to change the nautilus sidebar width size (Default: 200px)|
 |-i, --icon           | activities icon variant(s) **[standard/normal/gnome/ubuntu/arch/manjaro/fedora/debian/void]** (Default: standard variant)|
 |-g, --gdm            | Install GDM theme, you should run this with sudo!|
-|-r, --revert         | revert GDM theme, you should run this with sudo!|
+|-r, --remove         | remove theme, this will remove all installed themes!|
 |-h, --help           | Show this help|
 
 If you want to change the nautilus sidebar width size, then you can run:
@@ -90,10 +90,19 @@ If you want to change the panel transparency, then you can run:
 
     ./install.sh -t
 
+If you want to remove all installed themes, then you can run:
+
+    ./install.sh -r
+
+If you want to remove installed gdm theme, then you can run:
+
+    ./install.sh -r -g
+
 ### Suggested themes
 |  Suggested themes   | links | preview |
 |:--------------------|:-------------|:-------------|
-| Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](pictures/firefox-theme.png) |
+| Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](src/other/firefox/preview.png) |
+| Dash to Dock theme  | [NordSur dash-to-dock theme](src/other/dash-to-dock)|  |
 
 ## Theme Preview
 ![gtk](pictures/preview-gtk.png)
