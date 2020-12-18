@@ -13,14 +13,14 @@
 }
 
 #dashtodockContainer .number-overlay {
-  color: white;
+  color: #D8DEE9;
   background-color: rgba(0, 0, 0, 0.75);
   text-align: center;
 }
 
 #dashtodockContainer .notification-badge {
-  color: white;
-  background-color: #0860f2;
+  color: #D8DEE9;
+  background-color: #5E81AC;
   box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.25);
   border-radius: 1000px;
   margin: 2px;
@@ -137,7 +137,7 @@
 }
 
 #dashtodockContainer:overview #dash {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(216, 222, 233, 0.15);
 }
 
 #dashtodockContainer.opaque:overview #dash, #dashtodockContainer.transparent:overview #dash {

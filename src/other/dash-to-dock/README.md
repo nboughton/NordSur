@@ -1,4 +1,4 @@
-## WhiteSur dash-to-dock theme
+## NordSur dash-to-dock theme
 
 ## Installation
 
