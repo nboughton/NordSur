@@ -694,7 +694,7 @@ button.osd:disabled, label:disabled selection.osd {
 
 button.suggested-action {
   color: #D8DEE9;
-  background-color: #88C0D0;
+  background-color: #5E81AC;
   border-color: rgba(46, 52, 64, 0.15);
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 -1px rgba(255, 255, 255, 0.03);
@@ -705,12 +705,12 @@ button.suggested-action.flat, .raven .raven-header:not(.top) button.suggested-ac
   background-color: transparent;
   background-image: none;
   box-shadow: none;
-  color: #88C0D0;
+  color: #5E81AC;
 }
 
 button.suggested-action:hover {
   color: #D8DEE9;
-  background-color: #9acad7;
+  background-color: #6f8eb5;
   border-color: rgba(46, 52, 64, 0.15);
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 -1px rgba(255, 255, 255, 0.03);
@@ -718,7 +718,7 @@ button.suggested-action:hover {
 
 button.suggested-action:active, button.suggested-action:checked {
   color: #D8DEE9;
-  background-color: #add3de;
+  background-color: #809bbd;
   border-color: rgba(46, 52, 64, 0.15);
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 -1px rgba(255, 255, 255, 0.03);
@@ -4170,7 +4170,7 @@ infobar.info {
 }
 
 infobar.question {
-  background-color: #88C0D0;
+  background-color: #5E81AC;
 }
 
 infobar.warning {
@@ -5634,7 +5634,7 @@ window.background > box.vertical box.horizontal > box.vertical > scrolledwindow 
 }
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable label.compressed-entries-label {
-  background-image: image(#88C0D0);
+  background-image: image(#5E81AC);
   color: #D8DEE9;
   font-weight: 700;
 }
@@ -8052,7 +8052,7 @@ actionbar.inline-toolbar button:last-child {
 scale.warmth trough {
   min-height: 4px;
   border-radius: 3px;
-  background-image: linear-gradient(to right, #88C0D0, #BF616A);
+  background-image: linear-gradient(to right, #5E81AC, #BF616A);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -8590,7 +8590,7 @@ GtkListBox .h4 {
 
 #restart_button.button {
   color: green;
-  background-color: #88C0D0;
+  background-color: #5E81AC;
   border-color: rgba(46, 52, 64, 0.15);
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 -1px rgba(255, 255, 255, 0.03);
@@ -8598,7 +8598,7 @@ GtkListBox .h4 {
 
 #restart_button.button:hover {
   color: green;
-  background-color: #add3de;
+  background-color: #809bbd;
   border-color: rgba(46, 52, 64, 0.15);
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 -1px rgba(255, 255, 255, 0.03);
@@ -8606,7 +8606,7 @@ GtkListBox .h4 {
 
 #restart_button.button:active, #restart_button.button:checked {
   color: green;
-  background-color: #63adc2;
+  background-color: #49688e;
   border-color: rgba(46, 52, 64, 0.15);
   background-image: none;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.15), inset 0 -1px rgba(255, 255, 255, 0.03);

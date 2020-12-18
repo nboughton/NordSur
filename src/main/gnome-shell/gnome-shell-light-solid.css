@@ -3073,7 +3073,7 @@ StWidget.focused .app-well-app-running-dot {
 
 .login-dialog .modal-dialog-button:default {
   color: #D8DEE9;
-  background-color: #88C0D0;
+  background-color: #5E81AC;
   border: 1px solid rgba(46, 52, 64, 0.12);
   text-shadow: none;
   icon-shadow: none;
@@ -3082,7 +3082,7 @@ StWidget.focused .app-well-app-running-dot {
 .login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
   color: #D8DEE9;
   border-color: rgba(46, 52, 64, 0.12);
-  background-color: #7dbacc;
+  background-color: #5579a5;
   text-shadow: none;
   icon-shadow: none;
 }

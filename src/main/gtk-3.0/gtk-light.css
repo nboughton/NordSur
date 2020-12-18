@@ -211,7 +211,7 @@ entry.contacts-postal-entry, spinbutton entry, .linked > entry:not(:only-child) 
 entry.contacts-postal-entry:focus, spinbutton entry:focus, .linked > entry:focus:not(:only-child) {
   color: #2E3440;
   background-color: rgba(46, 52, 64, 0.05);
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
   transition-duration: 300ms;
 }
 
@@ -266,7 +266,7 @@ entry:hover {
 entry:focus {
   color: #2E3440;
   background-color: rgba(46, 52, 64, 0.05);
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
   transition-duration: 300ms;
 }
 
@@ -697,8 +697,8 @@ button.osd:disabled, label:disabled selection.osd {
 button.suggested-action {
   background-clip: border-box;
   color: #D8DEE9;
-  background-color: #88C0D0;
-  border-color: #72b4c7;
+  background-color: #5E81AC;
+  border-color: #50729b;
   background-image: none;
   box-shadow: none;
 }
@@ -708,14 +708,14 @@ button.suggested-action.flat, .raven .raven-header:not(.top) button.suggested-ac
   background-color: transparent;
   background-image: none;
   box-shadow: none;
-  color: #88C0D0;
+  color: #5E81AC;
 }
 
 button.suggested-action:hover {
   background-clip: border-box;
   color: #D8DEE9;
-  background-color: #9acad7;
-  border-color: #84becf;
+  background-color: #6f8eb5;
+  border-color: #5b7eaa;
   background-image: none;
   box-shadow: none;
 }
@@ -723,8 +723,8 @@ button.suggested-action:hover {
 button.suggested-action:active, button.suggested-action:checked {
   background-clip: border-box;
   color: #D8DEE9;
-  background-color: #add3de;
-  border-color: #97c8d6;
+  background-color: #809bbd;
+  border-color: #6b8cb3;
   background-image: none;
   box-shadow: none;
   box-shadow: none;
@@ -906,7 +906,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, toolbar.inline-toolb
 }
 
 .linked:not(.vertical):not(.path-bar) > entry:focus:not(:only-child) {
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 .linked:not(.vertical):not(.path-bar) > entry:drop(active):not(:only-child) {
@@ -930,7 +930,7 @@ toolbar.inline-toolbar toolbutton:only-child > button.flat, toolbar.inline-toolb
 }
 
 .linked.vertical > entry:focus:not(:only-child) {
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 .linked.vertical > entry:drop(active):not(:only-child) {
@@ -1112,8 +1112,8 @@ spinbutton entry {
 }
 
 spinbutton entry:focus {
-  border-color: rgba(136, 192, 208, 0.75);
-  box-shadow: 0 1px 1px 0 transparent, inset 0 0 0 1px rgba(136, 192, 208, 0.75);
+  border-color: rgba(94, 129, 172, 0.75);
+  box-shadow: 0 1px 1px 0 transparent, inset 0 0 0 1px rgba(94, 129, 172, 0.75);
 }
 
 spinbutton entry:drop(active) {
@@ -1156,7 +1156,7 @@ spinbutton:not(.vertical) > entry + button:not(:active):hover {
 }
 
 spinbutton:not(.vertical) > entry:focus + button {
-  border-left-color: rgba(136, 192, 208, 0.75);
+  border-left-color: rgba(94, 129, 172, 0.75);
 }
 
 spinbutton:not(.vertical) > entry:drop(active) + button {
@@ -1179,7 +1179,7 @@ spinbutton:not(.vertical) > entry:drop(active) + button {
 }
 
 .osd spinbutton:not(.vertical) > entry:focus + button {
-  border-left-color: rgba(136, 192, 208, 0.75);
+  border-left-color: rgba(94, 129, 172, 0.75);
 }
 
 spinbutton.vertical button, spinbutton.vertical entry {
@@ -1193,7 +1193,7 @@ spinbutton.vertical button.up {
 }
 
 spinbutton.vertical > entry:focus + button {
-  border-top-color: rgba(136, 192, 208, 0.75);
+  border-top-color: rgba(94, 129, 172, 0.75);
 }
 
 spinbutton.vertical > entry:drop(active) + button {
@@ -1468,7 +1468,7 @@ headerbar .linked:not(.vertical) > entry:focus {
   border-radius: 6px;
   background-image: none;
   background-color: rgba(46, 52, 64, 0.05);
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 headerbar .linked:not(.vertical) > entry:disabled {
@@ -1740,7 +1740,7 @@ headerbar entry, .titlebar entry {
 .nemo-window .primary-toolbar entry:focus, headerbar entry:focus {
   background-image: none;
   background-color: rgba(46, 52, 64, 0.05);
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 .nemo-window .primary-toolbar entry:disabled {
@@ -2600,7 +2600,7 @@ scrollbar slider:hover {
 }
 
 scrollbar slider:hover:active {
-  background-color: #81a1c1;
+  background-color: #5e81ac;
 }
 
 scrollbar slider:disabled {
@@ -4182,7 +4182,7 @@ infobar.info {
 }
 
 infobar.question {
-  background-color: #88C0D0;
+  background-color: #5E81AC;
 }
 
 infobar.warning {
@@ -4949,7 +4949,7 @@ filechooser paned > separator:hover,
 }
 
 .nautilus-window placessidebar.sidebar scrollbar slider:hover:active {
-  background-color: #81a1c1;
+  background-color: #5e81ac;
 }
 
 .nautilus-window placessidebar.sidebar scrollbar slider:disabled {
@@ -5181,7 +5181,7 @@ filechooser paned > separator:hover,
 }
 
 .nemo-window .nemo-window-pane widget.entry {
-  border: 2px solid rgba(136, 192, 208, 0.75);
+  border: 2px solid rgba(94, 129, 172, 0.75);
   background-color: rgba(46, 52, 64, 0.05);
   border-radius: 6px;
   box-shadow: none;
@@ -5652,7 +5652,7 @@ window.background > box.vertical box.horizontal > box.vertical > scrolledwindow 
 }
 
 window.background > box.vertical box.horizontal > box.vertical > scrolledwindow > viewport.frame > list row.event.activatable label.compressed-entries-label {
-  background-image: image(#88C0D0);
+  background-image: image(#5E81AC);
   color: #D8DEE9;
   font-weight: 700;
 }
@@ -6060,11 +6060,11 @@ window.background.csd > overlay > hdyleaflet > overlay > scrolledwindow > viewpo
 }
 
 entry.contacts-postal-entry:focus {
-  box-shadow: 0 1px 1px 0 transparent, inset 0 0 0 1px rgba(136, 192, 208, 0.75);
+  box-shadow: 0 1px 1px 0 transparent, inset 0 0 0 1px rgba(94, 129, 172, 0.75);
 }
 
 entry.contacts-postal-entry:focus + entry.contacts-postal-entry {
-  border-top-color: rgba(136, 192, 208, 0.75);
+  border-top-color: rgba(94, 129, 172, 0.75);
 }
 
 stack#titlebar_container.titlebar > stack > headerbar,
@@ -6356,7 +6356,7 @@ headerbar.titlebar.incognito-mode entry image, headerbar.titlebar.incognito-mode
 headerbar.titlebar.incognito-mode entry:focus {
   background-image: none;
   background-color: rgba(46, 52, 64, 0.05);
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 headerbar.titlebar.incognito-mode entry:disabled {
@@ -6381,7 +6381,7 @@ notebook > box > stack > box.vertical > paned.vertical > overlay > .floating-bar
 .background headerbar entry.starred:focus, .background headerbar entry.non-starred:focus {
   background-image: none;
   background-color: rgba(46, 52, 64, 0.05);
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 .background headerbar entry.starred:disabled, .background headerbar label:disabled selection.starred, label:disabled .background headerbar selection.starred, .background headerbar entry.non-starred:disabled, .background headerbar label:disabled selection.non-starred, label:disabled .background headerbar selection.non-starred {
@@ -7215,7 +7215,7 @@ window.background:not(.csd) > widget .entry {
 window.background:not(.csd) > widget > entry:focus,
 window.background:not(.csd) > widget .entry:focus {
   border-color: #5E81AC;
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 window.background:not(.csd) > widget > spinbutton {
@@ -7874,7 +7874,7 @@ MarlinViewWindow FMListView, MarlinViewWindow FMColumnView {
 .marlin-pathbar.pathbar:focus {
   background-image: none;
   background-color: rgba(46, 52, 64, 0.05);
-  box-shadow: inset 0 0 0 2px rgba(136, 192, 208, 0.75);
+  box-shadow: inset 0 0 0 2px rgba(94, 129, 172, 0.75);
 }
 
 .marlin-pathbar.pathbar:disabled, label:disabled selection.pathbar {
@@ -8078,7 +8078,7 @@ actionbar.inline-toolbar button:last-child {
 scale.warmth trough {
   min-height: 4px;
   border-radius: 3px;
-  background-image: linear-gradient(to right, #88C0D0, #BF616A);
+  background-image: linear-gradient(to right, #5E81AC, #BF616A);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
@@ -8621,8 +8621,8 @@ GtkListBox .h4 {
 #restart_button.button {
   background-clip: border-box;
   color: green;
-  background-color: #88C0D0;
-  border-color: #72b4c7;
+  background-color: #5E81AC;
+  border-color: #50729b;
   background-image: none;
   box-shadow: none;
 }
@@ -8630,8 +8630,8 @@ GtkListBox .h4 {
 #restart_button.button:hover {
   background-clip: border-box;
   color: green;
-  background-color: #add3de;
-  border-color: #97c8d6;
+  background-color: #809bbd;
+  border-color: #6b8cb3;
   background-image: none;
   box-shadow: none;
 }
@@ -8639,8 +8639,8 @@ GtkListBox .h4 {
 #restart_button.button:active, #restart_button.button:checked {
   background-clip: border-box;
   color: green;
-  background-color: #63adc2;
-  border-color: #4ea1b9;
+  background-color: #49688e;
+  border-color: #3f597a;
   background-image: none;
   box-shadow: none;
 }

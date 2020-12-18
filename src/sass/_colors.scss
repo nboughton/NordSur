@@ -53,7 +53,7 @@ $warning_color:                     #D08770;
 $error_color:                       #BF616A;
 $success_color:                     #A3BE8C;
 $destructive_color:                 #BF616A;
-$suggested_color:                   #88C0D0;
+$suggested_color:                   #5E81AC;
 
 $progress_color:                    $selected_bg_color;
 $drop_target_color:                 #D08770;
@@ -131,7 +131,7 @@ $panel_border_color:                if($variant == 'light', rgba(216, 222, 233, 
 $entry_bg:                          if($variant == 'light', rgba(46, 52, 64, 0.05), rgba(216, 222, 233, 0.05));
 $entry_shell_bg:                    if($variant == 'light', rgba(46, 52, 64, 0.1), rgba(216, 222, 233, 0.1));
 $entry_border:                      $borders_color;
-$entry_highlight:                   if($variant == 'light', rgba(#88C0D0, 0.75), rgba($selection_mode_bg, 0.75));
+$entry_highlight:                   if($variant == 'light', rgba(#5e81ac, 0.75), rgba($selection_mode_bg, 0.75));
 
 // Button colors
 $button_bg:                         if($variant == 'light', #D8DEE9, #4C566A);
@@ -145,8 +145,8 @@ $button_active_border:              #5E81AC;
 
 $header_button_bg:                  if($variant == 'dark', lighten($header_bg, 15%), #D8DEE9);
 $header_button_hover_bg:            if($variant == 'dark', lighten($header_bg, 25%), #E5E9F0);
-$header_button_active_bg:           if($variant == 'dark', lighten($header_bg, 35%), #81a1c1);
-$header_button_checked_bg:          if($variant == 'dark', lighten($header_bg, 45%), #81a1c1);
+$header_button_active_bg:           if($variant == 'dark', lighten($header_bg, 35%), #5e81ac);
+$header_button_checked_bg:          if($variant == 'dark', lighten($header_bg, 45%), #5e81ac);
 
 // Button borders and highlights colors
 $button_highlight:                  if($variant == 'light', #D8DEE9, rgba(216, 222, 233, 0.1));

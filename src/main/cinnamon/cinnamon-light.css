@@ -109,7 +109,7 @@ stage {
 
 #menu-search-entry:focus, .notification StEntry:focus, .menu #notification StEntry:focus, .popup-menu #notification StEntry:focus, #notification StEntry:focus, #menu-search-entry:hover, .notification StEntry:hover, .menu #notification StEntry:hover, .popup-menu #notification StEntry:hover, #notification StEntry:hover {
   color: #2E3440;
-  border: 2px solid rgba(136, 192, 208, 0.75);
+  border: 2px solid rgba(94, 129, 172, 0.75);
   background-color: rgba(46, 52, 64, 0.05);
 }
 

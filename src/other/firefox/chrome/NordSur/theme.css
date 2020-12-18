@@ -21,3 +21,8 @@
 	content: "Firefox NordSur theme";
 	padding: 9px;
 }
+
+/*CHANGE NEW TAB BACKGROUND COLOUR*/
+@-moz-document url("about:newtab"), url("about:home") {
+	body { background-color: #2e3440 !important;}
+}
