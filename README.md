@@ -101,9 +101,8 @@ If you want to remove installed gdm theme, then you can run:
 ### Suggested themes
 |  Suggested themes   | links | preview |
 |:--------------------|:-------------|:-------------|
-| Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](pictures/firefox-theme.png) |
-| Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](pictures/firefox-theme.png) |
-| Dash to Dock theme  | [NordSur dash-to-dock theme](src/other/dash-to-dock)| ![firefox](pictures/dash-to-dock.png) |
+| Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](src/other/firefox/preview.png) |
+| Dash to Dock theme  | [NordSur dash-to-dock theme](src/other/dash-to-dock)|  |
 
 ## Theme Preview
 ![gtk](pictures/preview-gtk.png)
