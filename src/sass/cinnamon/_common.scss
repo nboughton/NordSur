@@ -9,6 +9,8 @@ $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
 $_bubble_borders_color: transparentize($osd_fg_color,0.8);
 
+@if $trans == 'true' { $panel_bg:   if($variant == 'light', rgba(white, $panel_opacity), rgba(black, $panel_opacity)); }
+
 stage {
   font-family: $font-family;
   @include fontsize($font-size);
@@ -223,8 +225,8 @@ StScrollBar {
 // Switches
 //
 .toggle-switch {
-  width: 50px;
-  height: 20px;
+  width: 40px;
+  height: 24px;
   background-size: contain;
   background-image: url("#{$asset_path}/toggle-off.svg");
 
