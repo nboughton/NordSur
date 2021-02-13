@@ -159,7 +159,7 @@ stage {
 
 .candidate-popup-boxpointer, .popup-menu .popup-menu-content, .modal-dialog {
   background-color: #e5e9f0;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.2);
   border: solid rgba(0, 0, 0, 0.75);
   border-width: 0;
@@ -1099,16 +1099,8 @@ StWidget.focused .app-well-app-running-dot {
   border-radius: 12px;
 }
 
-<<<<<<< HEAD
-/* Popovers/Menus */
-.candidate-popup-boxpointer, .popup-menu .popup-menu-content, .modal-dialog {
-  background-color: #E5E9F0;
-  border-radius: 0px;
-  border: none;
-=======
 .app-folder:hover .overview-icon {
   background-color: rgba(255, 255, 255, 0.2);
->>>>>>> master
 }
 
 .app-folder-dialog {
@@ -1118,20 +1110,6 @@ StWidget.focused .app-well-app-running-dot {
   background-color: rgba(24, 24, 24, 0.95);
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-sub-menu {
-  background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 0 0 -4px -4px;
-  border: none;
-  box-shadow: none;
-  margin: 0 6px;
-  transition-duration: 0ms;
-}
-
-.popup-menu .popup-sub-menu .popup-menu-item {
-  margin: 0;
-  border-radius: -4px;
-=======
 .app-folder-dialog .folder-name-container {
   padding: 24px 36px 0;
   spacing: 12px;
@@ -1141,7 +1119,6 @@ StWidget.focused .app-well-app-running-dot {
 .app-folder-dialog .folder-name-container .folder-name-label, .app-folder-dialog .folder-name-container .folder-name-entry {
   font-size: 18pt;
   font-weight: bold;
->>>>>>> master
 }
 
 .app-folder-dialog .folder-name-container .folder-name-entry {
@@ -1153,10 +1130,6 @@ StWidget.focused .app-well-app-running-dot {
   color: rgba(216, 222, 233, 0.85);
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-sub-menu .popup-menu-item:not(:first-child):last-child {
-  border-radius: 0 0 -4px -4px;
-=======
 .app-folder-dialog .folder-name-container .edit-folder-button {
   background-color: rgba(216, 222, 233, 0.15);
   color: rgba(216, 222, 233, 0.85);
@@ -1165,26 +1138,14 @@ StWidget.focused .app-well-app-running-dot {
   width: 36px;
   height: 36px;
   border-radius: 18px;
->>>>>>> master
 }
 
 .app-folder-dialog .folder-name-container .edit-folder-button > StIcon {
   icon-size: 16px;
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-menu-item {
-  spacing: 12px;
-  padding: 6px;
-  color: #3B4252;
-  text-shadow: none;
-  border-radius: -4px;
-  margin: 0 6px;
-  transition-duration: 0ms;
-=======
 .app-folder-dialog .folder-name-container .edit-folder-button:hover {
   background-color: rgba(216, 222, 233, 0.15);
->>>>>>> master
 }
 
 .app-folder-dialog .folder-name-container .edit-folder-button:checked, .app-folder-dialog .folder-name-container .edit-folder-button:active {
@@ -1196,17 +1157,8 @@ StWidget.focused .app-well-app-running-dot {
   column-spacing: 20px;
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-menu-item:checked {
-  font-weight: normal;
-  border-radius: -4px -4px 0 0;
-  border: none;
-  box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.75);
-=======
 .app-folder-dialog .page-indicators {
   margin-bottom: 18px;
->>>>>>> master
 }
 
 .app-folder-dialog .page-indicators .page-indicator {
@@ -3228,7 +3180,7 @@ StEntry StLabel.hint-text {
   padding-bottom: 6px !important;
   color: #3b4252;
   text-shadow: none;
-  border-radius: 8px;
+  border-radius: -4px;
   margin: 0 6px;
   transition-duration: 0ms;
 }
@@ -3245,7 +3197,7 @@ StEntry StLabel.hint-text {
 
 .popup-menu .popup-menu-item:checked {
   font-weight: normal;
-  border-radius: 8px 8px 0 0;
+  border-radius: -4px -4px 0 0;
   border: none;
   box-shadow: none;
   color: #3b4252;
@@ -3272,22 +3224,6 @@ StEntry StLabel.hint-text {
   transition: none;
 }
 
-<<<<<<< HEAD
-.login-dialog .modal-dialog-button:default {
-  color: #D8DEE9;
-  background-color: #5E81AC;
-  border: 1px solid rgba(46, 52, 64, 0.12);
-  text-shadow: none;
-  icon-shadow: none;
-}
-
-.login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
-  color: #D8DEE9;
-  border-color: rgba(46, 52, 64, 0.12);
-  background-color: #5579a5;
-  text-shadow: none;
-  icon-shadow: none;
-=======
 .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected:active {
   color: #d8dee9;
   background-color: #5c7da7;
@@ -3296,12 +3232,11 @@ StEntry StLabel.hint-text {
 
 .popup-menu .popup-menu-item:insensitive {
   color: rgba(46, 52, 64, 0.45);
->>>>>>> master
 }
 
 .popup-menu .popup-sub-menu {
   background-color: rgba(255, 255, 255, 0.75);
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 -4px -4px;
   border: none;
   box-shadow: none;
   margin: 0 6px;
@@ -3310,7 +3245,7 @@ StEntry StLabel.hint-text {
 
 .popup-menu .popup-sub-menu .popup-menu-item {
   margin: 0;
-  border-radius: 8px;
+  border-radius: -4px;
 }
 
 .popup-menu .popup-sub-menu .popup-menu-item:hover {
@@ -3324,7 +3259,7 @@ StEntry StLabel.hint-text {
 }
 
 .popup-menu .popup-sub-menu .popup-menu-item:not(:first-child):last-child {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 -4px -4px;
 }
 
 .popup-menu .popup-inactive-menu-item {

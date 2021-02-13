@@ -159,7 +159,7 @@ stage {
 
 .candidate-popup-boxpointer, .popup-menu .popup-menu-content, .modal-dialog {
   background-color: #2e3440;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: inset 0 0 1px 0 rgba(255, 255, 255, 0.2);
   border: solid rgba(0, 0, 0, 0.75);
   border-width: 1px;
@@ -947,13 +947,6 @@ stage {
   transition-duration: 150ms;
 }
 
-<<<<<<< HEAD
-/* Popovers/Menus */
-.candidate-popup-boxpointer, .popup-menu .popup-menu-content, .modal-dialog {
-  background-color: #2E3440;
-  border-radius: 0px;
-  border: none;
-=======
 .search-provider-icon .overview-icon, .search-provider-icon .overview-icon > StIcon,
 .show-apps .overview-icon,
 .show-apps .overview-icon > StIcon,
@@ -962,7 +955,6 @@ stage {
 .grid-search-result .overview-icon,
 .grid-search-result .overview-icon > StIcon {
   icon-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.15);
->>>>>>> master
 }
 
 .search-provider-icon:hover .overview-icon, .search-provider-icon:focus .overview-icon, .search-provider-icon:selected .overview-icon,
@@ -981,12 +973,6 @@ stage {
   background-image: none;
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-sub-menu {
-  background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 0 0 -4px -4px;
-  border: none;
-=======
 .search-provider-icon:active .overview-icon, .search-provider-icon:checked .overview-icon,
 .show-apps:active .overview-icon,
 .show-apps:checked .overview-icon,
@@ -995,23 +981,16 @@ stage {
 .grid-search-result:active .overview-icon,
 .grid-search-result:checked .overview-icon {
   background-color: rgba(216, 222, 233, 0.28);
->>>>>>> master
   box-shadow: none;
   transition-duration: 150ms;
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-sub-menu .popup-menu-item {
-  margin: 0;
-  border-radius: -4px;
-=======
 .app-well-app-running-dot {
   width: 5px;
   height: 5px;
   border-radius: 3px;
   background-color: rgba(216, 222, 233, 0.85);
   margin-bottom: 0;
->>>>>>> master
 }
 
 StWidget.focused .app-well-app-running-dot {
@@ -1022,38 +1001,22 @@ StWidget.focused .app-well-app-running-dot {
   background-color: rgba(216, 222, 233, 0.15);
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-sub-menu .popup-menu-item:not(:first-child):last-child {
-  border-radius: 0 0 -4px -4px;
-=======
 .show-apps .show-apps-icon {
   color: transparent;
   background-image: url("assets/view-app-grid.svg");
   background-size: contain;
->>>>>>> master
 }
 
 .show-apps .overview-icon {
   color: transparent;
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-menu-item {
-  spacing: 12px;
-  padding: 6px;
-  color: #D8DEE9;
-  text-shadow: none;
-  border-radius: -4px;
-  margin: 0 6px;
-  transition-duration: 0ms;
-=======
 .show-apps:hover .show-apps-icon,
 .show-apps:active .show-apps-icon,
 .show-apps:checked .show-apps-icon,
 .show-apps:focus .show-apps-icon {
   color: transparent;
   transition-duration: 150ms;
->>>>>>> master
 }
 
 .app-folder-popup {
@@ -1067,11 +1030,6 @@ StWidget.focused .app-well-app-running-dot {
   padding: 5px;
 }
 
-<<<<<<< HEAD
-.popup-menu .popup-menu-item:checked {
-  font-weight: normal;
-  border-radius: -4px -4px 0 0;
-=======
 .app-folder-icon {
   padding: 5px;
   spacing-rows: 5px;
@@ -1090,7 +1048,6 @@ StWidget.focused .app-well-app-running-dot {
   padding: 0;
   background-image: none;
   color: transparent;
->>>>>>> master
   border: none;
   box-shadow: none;
   background-color: rgba(216, 222, 233, 0.35);
@@ -3219,7 +3176,7 @@ StEntry StLabel.hint-text {
   padding-bottom: 6px !important;
   color: #afafaf;
   text-shadow: none;
-  border-radius: 8px;
+  border-radius: -4px;
   margin: 0 6px;
   transition-duration: 0ms;
 }
@@ -3236,7 +3193,7 @@ StEntry StLabel.hint-text {
 
 .popup-menu .popup-menu-item:checked {
   font-weight: normal;
-  border-radius: 8px 8px 0 0;
+  border-radius: -4px -4px 0 0;
   border: none;
   box-shadow: none;
   color: #afafaf;
@@ -3263,22 +3220,6 @@ StEntry StLabel.hint-text {
   transition: none;
 }
 
-<<<<<<< HEAD
-.login-dialog .modal-dialog-button:default {
-  color: #D8DEE9;
-  background-color: #5E81AC;
-  border: 1px solid rgba(46, 52, 64, 0.15);
-  text-shadow: none;
-  icon-shadow: none;
-}
-
-.login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:focus {
-  color: #D8DEE9;
-  border-color: rgba(46, 52, 64, 0.15);
-  background-color: #6889b1;
-  text-shadow: none;
-  icon-shadow: none;
-=======
 .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected:active {
   color: #d8dee9;
   background-color: #6486af;
@@ -3287,12 +3228,11 @@ StEntry StLabel.hint-text {
 
 .popup-menu .popup-menu-item:insensitive {
   color: rgba(222, 222, 222, 0.35);
->>>>>>> master
 }
 
 .popup-menu .popup-sub-menu {
   background-color: rgba(255, 255, 255, 0.15);
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 -4px -4px;
   border: none;
   box-shadow: none;
   margin: 0 6px;
@@ -3301,7 +3241,7 @@ StEntry StLabel.hint-text {
 
 .popup-menu .popup-sub-menu .popup-menu-item {
   margin: 0;
-  border-radius: 8px;
+  border-radius: -4px;
 }
 
 .popup-menu .popup-sub-menu .popup-menu-item:hover {
@@ -3315,7 +3255,7 @@ StEntry StLabel.hint-text {
 }
 
 .popup-menu .popup-sub-menu .popup-menu-item:not(:first-child):last-child {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 -4px -4px;
 }
 
 .popup-menu .popup-inactive-menu-item {

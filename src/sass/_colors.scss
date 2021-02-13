@@ -48,21 +48,12 @@ $link_color:                        #5E81AC;
 $link_visited_color:                if($variant == 'light', lighten($text_color, 10%), darken($text_color, 15%));
 
 // Theme colors
-<<<<<<< HEAD
-$selection_mode_bg:                 #5E81AC;
-$warning_color:                     #D08770;
-$error_color:                       #BF616A;
-$success_color:                     #A3BE8C;
-$destructive_color:                 #BF616A;
-$suggested_color:                   #5E81AC;
-=======
 $selection_mode_bg:                 lighten($selected_bg_color, 15%);
 $warning_color:                     #d08770;
 $error_color:                       #bf616a;
 $success_color:                     #a3be8c;
 $destructive_color:                 #bf616a;
 $suggested_color:                   #5e81ac;
->>>>>>> master
 
 $progress_color:                    $selected_bg_color;
 $drop_target_color:                 #D08770;
@@ -139,11 +130,7 @@ $panel_border_color:                if($variant == 'light', rgba(216, 222, 233, 
 $entry_bg:                          if($variant == 'light', rgba(46, 52, 64, 0.05), rgba(216, 222, 233, 0.05));
 $entry_shell_bg:                    if($variant == 'light', rgba(46, 52, 64, 0.1), rgba(216, 222, 233, 0.1));
 $entry_border:                      $borders_color;
-<<<<<<< HEAD
-$entry_highlight:                   if($variant == 'light', rgba(#5e81ac, 0.75), rgba($selection_mode_bg, 0.75));
-=======
 $entry_highlight:                   rgba($selection_mode_bg, 0.75);
->>>>>>> master
 
 // Button colors
 $button_bg:                         if($variant == 'light', #D8DEE9, #4C566A);
