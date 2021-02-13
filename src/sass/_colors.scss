@@ -6,24 +6,24 @@
 @import 'colors-palette';
 
 // Base colors
-$base_color:                        if($variant == 'light', #ffffff, #242424);
-$text_color:                        if($variant == 'light', #363636, #dadada);
-$bg_color:                          if($variant == 'light', #f5f5f5, #333333);
-$fg_color:                          if($variant == 'light', #242424, #dedede);
-$alt_fg_color:                      if($variant == 'light', #424242, #afafaf);
-$hint_fg_color:                     if($variant == 'light', #565656, #999999);
+$base_color:                        if($variant == 'light', #d8dee9, #2e3440);
+$text_color:                        if($variant == 'light', #3b4252, #d8dee9);
+$bg_color:                          if($variant == 'light', #e5e9f0, #3b4252);
+$fg_color:                          if($variant == 'light', #2e3440, #dedede);
+$alt_fg_color:                      if($variant == 'light', #3b4252, #afafaf);
+$hint_fg_color:                     if($variant == 'light', #434c5e, #999999);
 
-$track_color:                       if($variant == 'light', rgba(black, 0.20), rgba(white, 0.16));
-$visit_color:                       if($variant == 'light', rgba(black, 0.16), rgba(white, 0.12));
-$divider_color:                     if($variant == 'light', rgba(black, 0.12), rgba(white, 0.1));
+$track_color:                       if($variant == 'light', rgba(#2e3440, 0.20), rgba(#d8dee9, 0.16));
+$visit_color:                       if($variant == 'light', rgba(#2e3440, 0.16), rgba(#d8dee9, 0.12));
+$divider_color:                     if($variant == 'light', rgba(#2e3440, 0.12), rgba(#d8dee9, 0.1));
 
-$light_fg_color:                    white;
-$light_alt_fg_color:                rgba(white, 0.85);
-$light_hint_fg_color:               rgba(white, 0.50);
-$light_disabled_fg_color:           rgba(white, 0.45);
-$light_alt_disabled_fg_color:       rgba(white, 0.35);
-$light_track_color:                 rgba(white, 0.28);
-$light_divider_color:               rgba(white, 0.15);
+$light_fg_color:                    #d8dee9;
+$light_alt_fg_color:                rgba(#d8dee9, 0.85);
+$light_hint_fg_color:               rgba(#d8dee9, 0.50);
+$light_disabled_fg_color:           rgba(#d8dee9, 0.45);
+$light_alt_disabled_fg_color:       rgba(#d8dee9, 0.35);
+$light_track_color:                 rgba(#d8dee9, 0.28);
+$light_divider_color:               rgba(#d8dee9, 0.15);
 
 $selected_fg_color:                 $light_fg_color;
 $selected_bg_color:                 $theme_color_default;
@@ -38,10 +38,10 @@ $dark_solid_borders_color:          if($variant == 'light', darken($bg_color, 12
 $highlight_color:                   if($variant == 'light', rgba(216, 222, 233, 0.65), rgba(216, 222, 233, 0.1));
 
 // Background colors
-$dark_bg_color:                     rgba(black, 0.6);
-$alt_dark_bg_color:                 rgba(black, 0.3);
+$dark_bg_color:                     rgba(#2e3440, 0.6);
+$alt_dark_bg_color:                 rgba(#2e3440, 0.3);
 $solid_bg_color:                    if($variant == 'light', #eeeeee, #555555); // for gnome-shell keyboard
-$alt_solid_bg_color:                if($variant == 'light', #c0c0c0, #242424); // for gnome-shell keyboard
+$alt_solid_bg_color:                if($variant == 'light', #c0c0c0, #2e3440); // for gnome-shell keyboard
 
 // Link colors
 $link_color:                        #5E81AC;
@@ -49,11 +49,11 @@ $link_visited_color:                if($variant == 'light', lighten($text_color,
 
 // Theme colors
 $selection_mode_bg:                 lighten($selected_bg_color, 15%);
-$warning_color:                     #F27835;
-$error_color:                       #FC4138;
-$success_color:                     #30D158;
-$destructive_color:                 #f8464c;
-$suggested_color:                   #3484e2;
+$warning_color:                     #d08770;
+$error_color:                       #bf616a;
+$success_color:                     #a3be8c;
+$destructive_color:                 #bf616a;
+$suggested_color:                   #5e81ac;
 
 $progress_color:                    $selected_bg_color;
 $drop_target_color:                 #D08770;
@@ -118,7 +118,7 @@ $dialog_bg_color:                   if($variant == 'light', $bg_color, $base_col
 
 // Panel colors
 $panel_bg:                          if($variant == 'light', #f1f1f1, #2a2a2a);
-$panel_fg:                          if($trans == 'true', white, $text_color);
+$panel_fg:                          if($trans == 'true', #d8dee9, $text_color);
 
 @if $black == 'true' { $panel_fg:   $text_color; }
 
@@ -163,9 +163,9 @@ $button_active_image:               linear-gradient(0deg, $button_active_bottom 
 $button_active_hover_image:         linear-gradient(0deg, $button_active_hover_bottom 0%, $button_active_hover_top 100%);
 
 // WM colors
-$wm_outline_light: 0 0 0 2px rgba(black, 0.03), 0 0 0 1px rgba(black, 0.12);
-$wm_outline_dark: 0 0 0 2px rgba(black, 0.1), 0 0 0 1px rgba(black, 0.75);
-$wm_shadow: if($variant=='light', rgba(black, 0.15), rgba(black, 0.35));
+$wm_outline_light: 0 0 0 2px rgba(#2e3440, 0.03), 0 0 0 1px rgba(#2e3440, 0.12);
+$wm_outline_dark: 0 0 0 2px rgba(#2e3440, 0.1), 0 0 0 1px rgba(#2e3440, 0.75);
+$wm_shadow: if($variant=='light', rgba(#2e3440, 0.15), rgba(#2e3440, 0.35));
 $wm_outline: if($variant=='light', $wm_outline_light, $wm_outline_dark);
 
 // WM Buttons
