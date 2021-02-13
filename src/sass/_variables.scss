@@ -21,6 +21,8 @@ $secondary_opacity: 0.75;
 $hint_opacity: 0.6;
 $disabled_opacity: 0.45;
 
+$panel_opacity: 0.16;
+
 // sizes
 $small_size: if($laptop == 'false', 24px, 20px);
 $medium_size: if($laptop == 'false', 36px, 32px);
@@ -28,11 +30,21 @@ $large_size: if($laptop == 'false', 48px, 44px);
 $menuitem_size: if($laptop == 'false', 32px, 28px);
 $container_padding: if($laptop == 'false', 6px, 4px);
 
+$sidebar_size_default: 200px;
+$sidebar_size_220: 220px;
+$sidebar_size_240: 240px;
+$sidebar_size_260: 260px;
+$sidebar_size_280: 280px;
+
 // radiuses
 $circular_radius: 9999px;
 $bt_radius: 6px;
 $bd_radius: 8px;
+<<<<<<< HEAD
 $wm_radius: 0px;
+=======
+$wm_radius: 12px;
+>>>>>>> master
 $mn_radius: 10px;
 
 // durations

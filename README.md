@@ -6,67 +6,41 @@ Based on WhiteSur by [Vince Liuice](https://github.com/vinceliuice)
 
 NordSur is currently far from complete. I haven't finished applying the palette to all the themes of the original WhiteSur. It is currently only tested for GTK3/GNOME. Pull requests are welcome.
 
-## Info
+## Requirements
+### GTK2 Murrine engine requirements.
 
-### GTK+ 3.20 or later
+- gtk-murrine-engine  `Fedora/RedHat`
+- gtk2-engines-murrine  `Ubuntu/Mint/Debian`
+- gtk-engine-murrine  `Arch/Manjaro`
 
-### GTK2 engines requirements
-- GTK2 engine Murrine 0.98.1.1 or later.
-- GTK2 pixbuf engine or the gtk(2)-engines package.
+### GTK2 pixbuf engine requirements.
 
-Fedora/RedHat distros:
+- gtk2-engines  `Fedora/RedHat`
+- gtk2-engines-pixbuf  `Ubuntu/Mint/Debian`
+- gtk-engines  `Arch/Manjaro`
 
-    dnf install gtk-murrine-engine gtk2-engines
+### Installed Dependency requirements.
 
-Ubuntu/Mint/Debian distros:
-
-    sudo apt install gtk2-engines-murrine gtk2-engines-pixbuf
-
-ArchLinux:
-
-    pacman -S gtk-engine-murrine gtk-engines
-
-
-### Installation Depends requirement
-- sassc.
-- optipng.
-- inkscape.
-- libglib2.0-dev-bin `ubuntu 20.04`
-- libglib2.0-dev. `ubuntu 18.04` `debian 10.03` `linux mint 19`
-- libxml2-utils. `ubuntu 18.04` `debian 10.03` `linux mint 19`
-- glib2-devel. `Fedora` `Redhat`
-
-Fedora/RedHat distros:
-
-    dnf install sassc optipng inkscape glib2-devel
-
-Ubuntu/Mint/Debian distros:
-
-    sudo apt install sassc optipng inkscape libglib2.0-dev-bin
-
-Debian 10:
-
-    sudo apt install sassc optipng inkscape libcanberra-gtk-module libglib2.0-dev libxml2-utils
-
-ArchLinux:
-
-    pacman -S sassc optipng inkscape
-
-Other:
-1. Search for the dependencies in your distribution's repository or install the dependencies from source.
-2. For CentOS 8 users: the `sassc` package doesn't exist in EPEL 8 or any other main repositories. Download the RPM manually from older EPEL repositories or build from source.
+- sassc
+- optipng
+- inkscape
+- dialog
+- libglib2.0-dev-bin  `ubuntu 20.04`
+- libglib2.0-dev  `ubuntu 18.04` `debian 10.03` `linux mint 19`
+- libxml2-utils  `ubuntu 18.04` `debian 10.03` `linux mint 19`
+- glib2-devel  `Fedora` `Redhat`
 
 ## Installation
 
 ### From source
 
-After all the dependencies are installed, you can Run
-
-    ./install.sh
-
+After all dependencies are installed, you can run:
+```bash
+./install.sh
+```
 #### Install tips
 
-Usage:  `./Install`  **[OPTIONS...]**
+Usage:  `./install.sh`  **[OPTIONS...]**
 
 |  OPTIONS:           | |
 |:--------------------|:-------------|
@@ -75,31 +49,77 @@ Usage:  `./Install`  **[OPTIONS...]**
 |-c, --color          | Specify theme color variant(s) **[light/dark]** (Default: All variants)|
 |-o, --opacity        | Specify theme opacity variant(s) **[standard/solid]** (Default: All variants)|
 |-a, --alt            | Specify titlebutton variant(s) **[standard/alt]** (Default: All variants)|
-|-t, --trans          | Run a dialg to change the panel transparency (Default: 85%)|
-|-s, --size           | Run a dialg to change the nautilus sidebar width size (Default: 200px)|
-|-i, --icon           | activities icon variant(s) **[standard/normal/gnome/ubuntu/arch/manjaro/fedora/debian/void]** (Default: standard variant)|
+|-t, --theme          | Change the theme color **[default/blue/purple/pink/red/orange/yellow/green/grey]** (Default: MacOS blue)|
+|-p, --panel          | Change the panel opacty **[default/25/35/45/55/65/75/85]** (Default: 16)|
+|-s, --size           | Change the nautilus sidebar width size **[default/220/240/260/280]** (Default: 200px)|
+|-i, --icon           | Activities icon variant(s) **[standard/normal/gnome/ubuntu/arch/manjaro/fedora/debian/void]** (Default: standard variant)|
 |-g, --gdm            | Install GDM theme, you should run this with sudo!|
-|-r, --remove         | remove theme, this will remove all installed themes!|
+|-r, --remove         | Remove theme, this will remove all installed themes!|
+|-dialog, --dialog    | Run terminal dialog, this will Run terminal dialog to install themes!|
 |-h, --help           | Show this help|
 
-If you want to change the nautilus sidebar width size, then you can run:
+### <p align="center" > 1. Change theme accent color </p>
+If you want to change theme accent! (Default color is default MacOS color)
+then you can run:
+```bash
+./install.sh -t green  # Install green accent color version
+```
+![1](pictures/install-tip-01.png)
 
-    ./install.sh -s
+### <p align="center" > 2. Install GDM theme </p>
+If you want to install GDM theme!
+then you can run:
+```bash
+sudo ./install.sh -g      # install default dark version
 
-If you want to change the panel transparency, then you can run:
+sudo ./install.sh -g -c light     # install light version
 
-    ./install.sh -t
+sudo ./install.sh -g -r     # remove installed GDM theme
+```
+![2](pictures/install-tip-02.png)
 
-If you want to remove all installed themes, then you can run:
+### <p align="center" > 3. Change nautilus sidebar width size </p>
+If you want to change nautilus sidebar width size! (Default size is 200px)
+(Nautilus cannot change the structure of the sidebar, so I added a picture as a background to achieve the effect of bigsur)
+then you can run:
+```bash
+./install.sh -s 260    # Install 260px width version
+```
+![3](pictures/install-tip-03.png)
 
-    ./install.sh -r
+### <p align="center" > 4. Change gnome-shell activities icon </p>
+If you want to change gnome-shell activities icon! (Default icon is Apple)
+then you can run: (For example: Install Manjaro icon)
+```bash
+./install.sh -i manjaro
+```
+![4](pictures/install-tip-04.png)
 
-If you want to remove installed gdm theme, then you can run:
+### On Snapcraft
 
-    ./install.sh -r -g
+<a href="https://snapcraft.io/whitesur-gtk-theme">
+<img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" />
+</a>
+
+You can install the theme from the Snap Store, or by running:
+
+```bash
+sudo snap install whitesur-gtk-theme
+```
+To connect the theme to an app, run:
+```bash
+sudo snap connect [other snap]:gtk-3-themes whitesur-gtk-theme:gtk-3-themes
+```
+```bash
+sudo snap connect [other snap]:icon-themes whitesur-gtk-theme:icon-themes
+```
+To connect the theme to all apps which have available plugs to gtk-common-themes, you can run:
+```bash
+for i in $(snap connections | grep gtk-common-themes:gtk-3-themes | awk '{print $2}'); do sudo snap connect $i whitesur-gtk-theme:gtk-3-themes; done
+```
 
 ### Suggested themes
-|  Suggested themes   | links | preview |
+|  Suggested themes   | Links | Preview |
 |:--------------------|:-------------|:-------------|
 | Firefox theme       | [NordSur firefox theme](src/other/firefox)| ![firefox](src/other/firefox/preview.png) |
 | Dash to Dock theme  | [NordSur dash-to-dock theme](src/other/dash-to-dock)|  |

@@ -13,18 +13,18 @@
 }
 
 #dashtodockContainer .number-overlay {
-  color: #D8DEE9;
+  color: #d8dee9;
   background-color: rgba(0, 0, 0, 0.75);
   text-align: center;
 }
 
 #dashtodockContainer .notification-badge {
-  color: #D8DEE9;
-  background-color: #5E81AC;
-  box-shadow: -1px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  color: #d8dee9;
+  background-color: #5e81ac;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
   border-radius: 1000px;
   margin: 2px;
-  padding: 0.2em;
+  padding: 0.2em 0.6em;
   font-weight: bold;
   text-align: center;
 }
